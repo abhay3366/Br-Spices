@@ -1,0 +1,10 @@
+Chashi - Agriculture & Organic Food HTML Template
+
+Changelog:
+
+Version: 2.0.0  Date: 19-04-2021
+1. Add a Services Page.
+2. Add a Service Single Page.
+3. Changing Desktop Menu & Mobile Menu
+4. Improve CSS & JS
+5. Bootstrap 5 Integrate

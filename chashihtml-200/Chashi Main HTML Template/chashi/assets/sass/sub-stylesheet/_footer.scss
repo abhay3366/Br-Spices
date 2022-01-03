@@ -1,0 +1,158 @@
+/* @@@@@@@@@@@@@  Footer Section Start Here  @@@@@@@@@@@@@@ */
+.footer-section {
+    background: #0f1b28;
+    @extend %rel;
+    * {
+        @extend %rel;
+        z-index: 1;
+    }
+    &::after {
+        @extend %abs;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 0;
+        background: url(../css/bg-image/footer-top-bg.png) no-repeat;
+        transform: translateY(-50%);
+    }
+    .footer-top {
+        .footer-item {
+            margin-bottom: 40px;
+            .footer-inner {
+                .footer-logo {
+                    margin-bottom: 20px;
+                }
+                .footer-desc {
+                    p {
+                        color: $white-color;
+                        font-size: 15px;
+                    }
+                }
+                .footer-title {
+                    margin-bottom: 20px;
+                    h5 {
+                        color: $white-color;
+                    }
+                }
+                .footer-body {
+                    ul {
+                        li {
+                            @extend %flex;
+                            padding: 10px 0;
+                            .detalis {
+                                p {
+                                    color: $white-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.footer-addtess {
+                .footer-inner {
+                    .footer-body {
+                        ul {
+                            li {
+                                .icon {
+                                    width: 30px;
+                                    color: $theme-color;
+                                    font-size: $fs-h5;
+                                }
+                                .detalis {
+                                    width: calc(100% - 40px);
+                                    p {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.footer-blog {
+                .footer-inner {
+                    .footer-body {
+                        ul {
+                            li {
+                                justify-content: space-between;
+                                &:hover {
+                                    .thumb {
+                                        img {
+                                            transform: scale(1.05);
+                                        }
+                                    }
+                                }
+                                .thumb {
+                                    width: 90px;
+                                    @extend %hidden;
+                                    img {
+                                        @include transition($transition);
+                                    }
+                                }
+                                .detalis {
+                                    width: calc(100% - 100px);
+                                    h5, h6 {
+                                        margin-bottom: 0;
+                                        line-height: 1;
+                                        font-weight: 500;
+                                        color: $white-color;
+                                    }
+                                    h5 {
+                                        margin-bottom: 10px;
+                                        &:hover {
+                                            color: $theme-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.footer-gallery {
+                .footer-inner {
+                    .footer-body {
+                        ul {
+                            @extend %flex;
+                            li {
+                                width: calc(100% / 3);
+                                padding: 2px;
+                                &:hover {
+                                    img {
+                                        transform: scale(1.05);
+                                    }
+                                }
+                                a {
+                                    @extend %hidden;
+                                    display: block;
+                                    width: 100%;
+                                }
+                                img {
+                                    width: 100%;
+                                    @include transition($transition);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding: 30px 0;
+        margin-top: 50px;
+        border-top: 1px solid #f8fafb1f;
+        p {
+            margin-bottom: 0;
+            text-align: center;
+            color: $white-color;
+            a {
+                padding: 0 5px;
+                color: $white-color;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}

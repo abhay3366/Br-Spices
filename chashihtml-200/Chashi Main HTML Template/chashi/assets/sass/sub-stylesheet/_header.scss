@@ -1,0 +1,268 @@
+// Header Section Start here
+.header-section {
+    .header-area.menu-fixed {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 99;
+        background: $white-color;
+        box-shadow: 0 0 3px rgba(81, 136, 136, .10);
+    }
+    .primary-menu {
+        @extend %flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .logo {
+            a {
+                display: block;
+                img {
+                    display: block;
+                }
+            }
+        }
+        .navbar-toggler {
+            outline: none;
+            box-shadow: none;
+        }
+        .main-area {
+            @extend %flex;
+            align-items: center;
+            width: 100%;
+            @include breakpoint(sm) {
+                justify-content: flex-end;
+            }
+            .main-menu {
+                @include breakpoint(max-sm) {
+                    width: 100%;
+                }
+                ul {
+                    @extend %flex;
+                    padding: 0;
+                    margin: 0;
+                    @include breakpoint(max-sm) {
+                        width: 100%;
+                    }
+                    li {
+                        padding: 0;
+                        @include breakpoint(max-sm) {
+                            margin-right: 0;
+                            width: 100%;
+                            a {
+                                display: block;
+                                padding: 10px 0px !important;
+                                border-bottom: 1px solid $border-color;
+                            }
+                        }
+                        &.active, &:hover {
+                            > a {
+                                color: $theme-color;
+                            }
+                        }
+                        a {
+                            padding: 25px 20px;
+                            color: $title-color;
+                            font-size: $fs-base;
+                            @include transition($transition);
+                        }
+                        ul {
+                            @extend %abs;
+                            min-width: 200px;
+                            background: $theme-color;
+                            box-shadow: 0 0 5px rgba(136, 136, 136, .10);
+                            display: block;
+                            top: 100%;
+                            transform: scaleY(0);
+                            transform-origin: top;
+                            z-index: 999;
+                            @include transition($transition);
+                            @include breakpoint(max-sm) {
+                                position: static;
+                                display: none;
+                                background: $white-color;
+                                box-shadow: none;
+                                padding-left: 15px;
+                                li {
+                                    a {
+                                        color: $title-color !important;
+                                        border-bottom: 1px solid $border-color !important;
+                                    }
+                                }
+                            }
+                            li {
+                                a {
+                                    font-size: 98%;
+                                    padding: 10px 15px;
+                                    color: $white-color;
+                                    width: 100%;
+                                    border-bottom: 1px solid #ffffff40;
+                                    &:hover {
+                                        padding-left: 20px;
+                                        color: $theme-color;
+                                        background: $white-color;
+                                    }
+                                }
+                                &.active, &:hover {
+                                    > a {
+                                        background: $white-color;
+                                        color: $theme-color;
+                                    }
+                                }
+                                &:last-child {
+                                    a {
+                                        border-bottom: none;
+                                    }
+                                }
+                                &.menu-item-has-children {
+                                    margin-right: 0px;
+                                    a {
+                                        &::after {
+                                            right: 0px;
+                                            transform: translateY(-50%);
+                                            @include breakpoint(sm) {
+                                                right: 15px;
+                                                transform: translateY(-50%) rotate(-90deg);
+                                            }
+                                        }
+                                    }
+                                }
+                                ul {
+                                    left: 100%;
+                                    top: 0;
+                                }
+                            }
+                        }
+                        &.menu-item-has-children {
+                            margin-right: 5px;
+                            position: relative;
+                            @include breakpoint(lg) {
+                                margin-right: 10px;
+                            }
+                            @include breakpoint(xxl) {
+                                margin-right: 16px;
+                            }
+                            >a {
+                                @extend %rel;
+                                &::after {
+                                    @extend %abs;
+                                    top: 50%;
+                                    right: 0;
+                                    transform: translateY(-50%);
+                                    font-weight: 400;
+                                    content: "\ea99" !important;
+                                    font-family: IcoFont !important;
+                                }
+                            }
+                        }
+                        &:hover{
+                            >ul {
+                                transform: scaleY(1);
+                            }
+                        }
+                    }
+                    &.search-cart {
+                        @include breakpoint(max-sm) {
+                            margin-left: 0 !important;
+                            margin-top: 15px !important;
+                        }
+                        li {
+                            display: inline-block;
+                            width: 40px;
+                            @include breakpoint(max-sm) {
+                                margin: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+            .header-btn {
+                margin-top: 15px;
+                @include breakpoint(sm) {
+                    margin-left: 15px;
+                    margin-top: 0;
+
+                }
+                .lab-btn {
+                    display: block;
+                    padding: 13px 30px;
+                }
+            }
+        }
+    }
+    .header-top {
+        background: $theme-color;
+        padding: 10px 0;
+        .ht-left {
+            ul {
+                li {
+                    color: $white-color;
+                    font-size: 15px;
+                    font-weight: 500;
+                    padding-right: 15px;
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .ht-right {
+            .scocial-media {
+                margin-bottom: 0;
+                text-align: right;
+                a {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 18px;
+                    margin-bottom: 0;
+                    @include transition($transition);
+                    &:hover {
+                        color: $theme-color;
+                        background: $white-color;
+                    }
+                }
+            }
+        }
+        &.bg-black {
+            background: $title-color;
+        }
+    }
+}
+
+.transparent-header {
+    @extend %abs;
+    width: 100%;
+    top: 20px;
+    z-index: 999;
+    .primary-menu .main-area .main-menu ul li a {
+        color: $white-color;
+    }
+    .primary-menu .main-area .main-menu ul li ul {
+        background: $theme-color;
+    }
+    .primary-menu .main-area {
+        @include breakpoint(max-sm) {
+            padding: 15px;
+            background: $theme-color;
+            .header-btn .lab-btn {
+                background: $title-color;
+            }
+            .main-menu ul li.active > a {
+                color: $white-color;
+            }
+            .main-menu ul li ul li.active > a, .main-menu ul li ul li a, .main-menu ul li ul li.open > a, .main-menu ul li:hover > a {
+                background: $theme-color;
+                color: $white-color !important;
+            }
+        }
+    }
+    .primary-menu .navbar-toggler i {
+        color: $white-color;
+    }
+}
+.transparent-header .header-area.menu-fixed {
+    background: $title-color;
+}

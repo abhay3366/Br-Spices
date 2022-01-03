@@ -1,0 +1,120 @@
+/*! @@@@@@@@@@@@@@@@@@@@@@
+
+Template Name: chashi
+Template URI: https://themeforest.net/user/labartisan
+Author: LabArtisan
+Author URI: https://themeforest.net/user/labartisan
+Description: Description
+Version: 2.0.0
+Text Domain: chashi
+Tags: agriculture, agriculture farmer, dairy, dairy farm, eco, eco farm, farm, farmers, farming, health, organic, organic food, organic Products, retail, vegetables
+
+@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@@@
+>>> TABLE OF CONTENTS START:
+
+01. Normalize CSS
+02. Global CSS
+03. Header 
+	* Style-1
+	* Style-2
+	* Style-3
+	* Mobile Menu
+04. Banner 
+	* Style-1
+	* Style-2
+	* Style-3
+05. Page Header
+  	* Style-1
+06. Feature Section
+07. About Section
+	* Style-1
+	* Style-2
+	* Style-3
+08. Product Section
+	* Style-1
+	* Style-2
+	* Style-3
+	* Style-4
+	* Grid Style
+	* Masonary Style
+09. ABS Product
+10. Agricul Ffarm Section
+11. Agricul Fruits Section
+12. Team Member Section
+13. Testimonial Section
+	* Style-1
+	* Style-2
+	* Style-3
+14. Sponsor Section
+15. Newsletter Section
+16. Counterup Section
+17. Countdown Section
+18. Offer Section
+19. Contact Section
+20. Faq Section
+21. Fore Zero
+22. Blog
+	* Style-1
+	* Style-2
+	* Blog Single
+23. Widget
+24. Shop Page
+  * Shop Single
+  * cart Page
+25. Services Page
+26. Service Single Page
+
+
+
+>>> TABLE OF CONTENTS END:
+@@@@@@@@@@@@@@@@@@@@@@ */
+
+* {margin: 0;padding: 0;box-sizing: border-box; outline: none; box-shadow: none;}
+
+body {background: $white-color;color: $desc-color;font-family: $roboto;font-size: $fs-base;line-height: 1.5;}
+
+h1, h2, h3, h4, h5, h6 {color: $title-color; font-weight: 700;}
+a>h1, a>h2, a>h3, a>h4, a>h5, a>h6 {@include transition($transition);}
+h1 {font-size: $fs-h1;}
+
+h2 {font-size: $fs-h4;}
+
+h3 {font-size: $fs-h5;}
+
+h4 {font-size:$fs-h5;}
+
+h5 {font-size: $fs-h5;margin-top: -5px;}
+h6 {font-size: $fs-h6;}
+
+p {margin-bottom: 15px;font-weight: 400;font-size: $fs-base;color: $desc-color;line-height: 24px;}
+
+a {color: $title-color;@include transition($transition); display: inline-block; text-decoration: none;}
+
+a:hover, a:focus, a:active, a:visited {color: $title-color;text-decoration: none;outline: none;}
+
+img {height: auto;max-width: 100%;}
+
+@include breakpoint(sm) {
+	h1 {font-size: $fs-h1;line-height: $lh-h1;}
+	
+	h2{font-size: $fs-h2;line-height: $lh-h2;}
+	
+	h3 {font-size: $fs-h3;line-height: $lh-h3;}
+	
+	h4 {font-size:$fs-h4;line-height: $lh-h4;}
+	
+	h5 {font-size: $fs-h5;line-height: $lh-h5;}
+	
+	h6 {font-size: $fs-h6;line-height: $lh-h6;}
+}
+ul {
+	margin: 0;
+	padding: 0;
+	&.agri-ul {
+		li {
+			list-style: none;
+		}
+	}
+}
