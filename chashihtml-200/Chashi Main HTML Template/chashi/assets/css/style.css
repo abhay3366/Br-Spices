@@ -2393,6 +2393,24 @@ ul.agri-ul li {
 .feature-section .section-wrapper {
   margin-bottom: -15px;
 }
+.section-col{
+  /* box-shadow:5px 5px 5px 5px grey */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+}
+.feature-item{
+ 
+}
+.feature-item:hover{
+  transform: scale(1.02);
+  overflow: hidden;
+}
+.feature-img-text{
+  /* padding-left: 10px; */
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+}
 
 /* @@@@@@@@@@@@@  About Section Start Here  @@@@@@@@@@@@@@ */
 .about-us .shape-about {
