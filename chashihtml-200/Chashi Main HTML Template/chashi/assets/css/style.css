@@ -297,13 +297,13 @@ ul.agri-ul li {
   background-size: cover !important;
 }
 
-  .bg_img_1 {
+  /* .bg_img_1 {
     background: url(../../assets/images/bg-images/bg-1.jpg);
   }
 
 .bg_counter {
   background: url(../../assets/images/bg-images/bg-counter.jpg);
-}
+} */
 
 .bg-sopnsor1 {
   background: #f8fafe;
@@ -593,7 +593,7 @@ ul.agri-ul li {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background-color: white;
 }
 
 .section-header {
@@ -2335,9 +2335,9 @@ ul.agri-ul li {
 }
 
 /* @@@@@@@@@@@@@  Page Header Section Start Here  @@@@@@@@@@@@@@ */
-.page-header {
-  background: url(../../assets/images/bg-images/page-header.jpg);
-}
+/* .page-header {
+  background: url("assets/images/product/product banner.png");
+} */
 .page-header .page-header-content-area {
   z-index: 1;
   margin-bottom: 15px;
