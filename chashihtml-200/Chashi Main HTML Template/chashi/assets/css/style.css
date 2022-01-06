@@ -1901,6 +1901,10 @@ ul.agri-ul li {
 .header-section .primary-menu .logo a img {
   display: block;
 }
+.header-area .logo{
+  width:75px;
+  height: 75px;
+}
 .header-section .primary-menu .navbar-toggler {
   outline: none;
   box-shadow: none;
