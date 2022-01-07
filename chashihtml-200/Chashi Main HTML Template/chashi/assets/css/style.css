@@ -189,6 +189,7 @@ ul.agri-ul li {
   list-style: none;
 }
 
+
 /* @@@@@@@@@@@@@  Common CSS Writing Now  @@@@@@@@@@@@@@ */
 .padding-tb {
   padding-top: 80px;
@@ -701,6 +702,7 @@ ul.agri-ul li {
   .about-item .about-inner {
     margin-bottom: 45px;
   }
+  
 }
 .about-item .about-inner .about-thumb {
   width: 60px;
@@ -5048,3 +5050,71 @@ ul.agri-ul li {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* Page text */
+
+.text{
+  position: absolute;
+  top: 135px;
+  left: 500px;
+  font-size: 50px;
+  color: #83ba43;
+  font-weight: bold;
+}
+.product-item:hover{
+  transform: scale(1.05);
+}
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  .text{
+    position: absolute;
+    top: 55px;
+    left: 190px;
+    font-size: 30px;
+    color: #83ba43;
+    font-weight: bold;
+  } 
+  .product-content h6{
+    margin-right: 75px; 
+  }    
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .text{
+    position: absolute;
+    top: 75px;
+    left: 280px;
+    font-size: 40px;
+    color: #83ba43;
+    font-weight: bold;
+  } 
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .text{
+    position: absolute;
+    top: 75px;
+    left: 320px;
+    font-size: 45px;
+    color: #83ba43;
+    font-weight: bold;
+  } 
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .text{
+    position: absolute;
+    top: 115px;
+    left: 420px;
+    font-size: 48px;
+    color: #83ba43;
+    font-weight: bold;
+  } 
+ }
+
